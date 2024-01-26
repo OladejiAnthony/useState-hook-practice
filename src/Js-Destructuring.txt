@@ -1,0 +1,34 @@
+
+//Arrays Normal method 
+const person = ["zino", 28,"developer"];
+console.log(person [0]);
+console.log(person [2]);
+
+//Array Destructuring
+const personArr = ["zinoTrust", 24, "web dev"];
+
+const [name, age, job] = personArr;
+ console.log(age);
+  console.log(job);
+
+
+//Object Normal method
+
+const person = {
+name : "zino",
+age: 28,
+job: "developer"
+};
+console.log(person.job);
+
+
+//Object destructuring
+const human = {
+ Hame: "zino",
+ Hage: 28,
+ Hob: "developer"
+};
+const {Hame, Hage, Hob} = human;
+console.log(Hame);
+console.log(Hage);
+

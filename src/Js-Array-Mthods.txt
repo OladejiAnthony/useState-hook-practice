@@ -1,0 +1,15 @@
+// Note: please restart the page if syntax highlighting works bad.
+const ages = [1,2,3,4,5];
+
+  const adults=
+   ages.filter ((num) => {
+     return num >= 3;
+   }
+  )
+  const children= ages.filter((num) => {
+     return num <= 3;
+   }
+  )
+ 
+ console.log(adults);
+ 

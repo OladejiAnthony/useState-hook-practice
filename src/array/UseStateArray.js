@@ -7,6 +7,7 @@ function UseStateArray () {
   const [people, setPeople] = useState(peopleData);
     //console.log(people);
     //console.log(people[1].name);
+    
    const removePerson = (id) => {
       const newPeople = people.filter((person) => person.id !== id)
       setPeople(newPeople); 

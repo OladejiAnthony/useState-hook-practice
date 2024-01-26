@@ -6,7 +6,6 @@ import { useState } from "react";
 const Counter = () => {
   //Count useState hook
   const [count, setCount] = useState(0);
-  //Color useState hook
   //const [color, setColor] = useState("#444");
 
   const handleSubtract = () => {
