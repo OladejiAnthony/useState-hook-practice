@@ -1,15 +1,49 @@
 // Note: please restart the page if syntax highlighting works bad.
-const ages = [1,2,3,4,5];
 
-  const adults=
-   ages.filter ((num) => {
+##The Map method 
+  The Map aray method manipulates our array to create a new array by 
+  executing a function on every element in our array.
+
+  Array List -> const numbers = [1,2,3,4,5]     //array elements - 1,2,3,4,5 
+  Syntax ->     numbers.map(() => { return() })    //callback function - () => {}
+
+
+  Note - the callback function will be executed on every element in the numbers array.
+
+  a.  const numbers = [1,2,3,4,5];
+      numbers.map((num) => {
+        return num * 2;
+      })
+      console.log(numbers) ---> 1,2,3,4,5
+
+  b.  const numbers = [1,2,3,4,5];
+      const double = numbers.map((num) => {
+        return num * 2;
+      })
+      console.log(numbers) ---> 1,2,3,4,5
+      console.log(double) ---> 2,4,6,8,10
+
+##The Filter method 
+  It runs through the array and brings out elements that satisfies 
+  the conditions declared in the return statement.
+  Array List -> const numbers = [1,2,3,4,5]     //array elements - 1,2,3,4,5 
+  Syntax ->     numbers.filter(() => { return() })    //callback function - () => {}
+
+
+Question - Filter through the fflg student ages and extract those 
+  who are adult(>=3), and those who are children(<=3)
+  const ages = [1,2,3,4,5];
+
+ a. const adults = ages.filter ((num) => {
      return num >= 3;
    }
   )
-  const children= ages.filter((num) => {
+  console.log(adults);
+
+  b. const children = ages.filter((num) => {
      return num <= 3;
    }
   )
+ console.log(children);
  
- console.log(adults);
- 
+

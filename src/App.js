@@ -11,8 +11,8 @@ const App = () => {
        <Main /> 
        <br />
        <UseStateObject />
-       {/* <br />
-       <Counter /> */}
+        <br />
+       <Counter /> 
     </div>
   )
 }

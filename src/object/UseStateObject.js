@@ -11,9 +11,15 @@ function UseStateObject () {
   //console.log(profile);
   //console.log(profile.name)
 
+  //You can Destructure
+  //const {name, job, company} = profile;
+
 
   const updateCompany = () => {
-    setProfile({ ...profile, company: "Microsoft" }); //spread operator to update the properties in an object and add new values to it
+    setProfile({ ...profile, company: "Microsoft" }); 
+    //spread operator to update the properties in an object and add new values to it
+    //...profile fills the screen with our initial name and job values
+    //while we reset our company property alone.
     console.log(profile.company)
   };
 
